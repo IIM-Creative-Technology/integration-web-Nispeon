@@ -9,7 +9,8 @@
 }
 
 :root {
-
+    --dark-pink: #bf3676;
+    --lavender: #d3c4f2;
 }
 
 
@@ -24,6 +25,7 @@ nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    height: fit-content;
 }
 
 .headerLogo {
@@ -32,12 +34,34 @@ nav {
 
 nav ul {
     display: flex;
-
+    list-style-type: none;
+    margin-top: 42px;
 }
 
-nav ul a {
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li:nth-of-type(1) a {
+    border-bottom: #ffffff solid 2px;
+}
+
+nav a {
     font-size: 18px;
     font-weight: 500;
     text-align: left;
     color: #ffffff;
+} 
+
+nav section {
+    display: flex;
+    width: fit-content;
+}
+
+.navConnect {
+    margin: 29px 110px 0 0;
+    background-color: var(--dark-pink);
+    height: fit-content;
+    padding: 15px 26px;
+    border-radius: 50px;
 }
