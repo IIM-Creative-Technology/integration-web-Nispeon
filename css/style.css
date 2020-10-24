@@ -61,6 +61,7 @@ header nav a {
 
 header nav section {
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     height: 0;
     justify-content: space-between;
@@ -634,4 +635,130 @@ h5 {
 .navConnect:hover, .joinButton:hover, .groupButton:hover, .customButton:hover {
     background-color: #a73068;
     cursor: pointer;
+}
+
+
+/* ------------- RESPONSIVE ------------------ */
+
+
+@media screen and (max-width:1262px) {
+
+    .custom {
+        padding: 74px 100px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .headerImg {
+        top: 30.4%;
+    }
+
+    .custom {
+        padding: 74px 50px;
+    }
+
+    .navConnect {
+        margin: 0 10px 0 0;
+    }
+
+    .groupCreate h1, .groupCreate p, .groupButton {
+        margin-left: 115px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    header nav {
+        flex-direction: column;
+        margin-bottom: 110px;
+    }
+
+    header nav section {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .groupCreate {
+        margin: auto;
+        width: 80%;
+    }
+
+    .groupCreate h1, .groupCreate p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .groupButton {
+        margin: 34px auto;
+    }
+
+    .headerImg {
+        display: none; /*J'ai choisis de suppr l'image car elle n'a aucun réel intérêt, elle n'importe pas d'information mais rajoute du scroll inutile */
+    }
+
+    .custom img {
+        width: 100%;
+    }
+
+    .ord {
+        flex-wrap: wrap;
+    }
+
+    .ordering, .ordering:nth-of-type(1) {
+        width: 100%;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .bet4 {
+        width: 50%;
+        flex-direction: column;
+        padding: 0 5%;
+    }
+
+    .bet4 img {
+        margin: 0 auto;
+    }
+
+    .bet4 h3, .bet4 p {
+        text-align: center;
+    }
+
+    .deg {
+        display: none; /* Ce texte était inutile depuis le début, et encore plus maintenant*/
+    }
+
+    .customOrder {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #middle {
+        margin-left: auto;
+    }
+
+    .right {
+        margin-right: auto;
+    }
+
+    .custom img {
+        top: 46px;
+    }
+}
+
+@media screen and (max-width:703px) {
+    .navConnect {
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    
 }
