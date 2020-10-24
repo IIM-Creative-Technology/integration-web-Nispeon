@@ -38,7 +38,6 @@ nav {
 nav ul {
     display: flex;
     list-style-type: none;
-    margin-top: 4.7%;
 }
 
 nav ul li a {
@@ -61,10 +60,14 @@ nav a {
 nav section {
     display: flex;
     width: fit-content;
+    height: 0;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 3.2%;
 }
 
 .navConnect {
-    margin: 29px 110px 0 0;
+    margin: 0 110px 0 0;
     background-color: var(--dark-pink);
     height: fit-content;
     padding: 15px 26px;
@@ -131,9 +134,6 @@ nav section {
 
 /* ------------- FIRST MAIN PART -------------- */
 
-main {
-    display: flex;
-}
 
 .bet {
     height: 962px;
@@ -164,7 +164,7 @@ main {
 }
 
 .bet-p-1{
-    width: 56%;
+    width: 57%;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.39;
@@ -175,17 +175,21 @@ main {
 
 .ord {
     display: flex;
+    justify-content: space-between;
 }
 
 .ordering {
     display: flex;
-    width: 50%;
+    width: calc(50% - 8px);
     flex-direction: column;
 }
 
+.ordering:nth-of-type(1) {
+    align-items: flex-end;
+}
 
 .bet4 {
-    width: 50%;
+    width: 74%;
     display: flex;
     margin-bottom: 97px;
 }
@@ -211,10 +215,82 @@ main {
     font-weight: 500;
     line-height: 1.56;
     color: #222222;
-    width: 61%;
 }
 
 .bet4 img {
     height: fit-content;
-    margin: 0 31px 0 16px;
+    margin: auto 31px auto 0;
+}
+
+.joinButton {
+    background-color: var(--dark-pink);
+    height: fit-content;
+    padding: 15px 26px;
+    border-radius: 50px;
+    width: fit-content;
+}
+
+.joinButton a {
+    font-size: 19px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+
+.deg {
+    position: absolute;
+    transform: rotate(90deg);
+    text-align: left;
+    color: #929292;
+    width: 389px;
+    height: 34px;
+    right: -102px;
+    top: 565px;
+    font-size: 7px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+/* ---------------- SLIDER SECTION --------------*/
+
+.sliderSec {
+    background-color: #ffffff;
+    height: 602px;
+    padding: 10.1% 8.8%;
+}
+
+.sliderSec h2 {
+    font-size: 40.5px;
+    font-weight: bold;
+    color: var(--dark-pink);
+    margin-bottom: 29px;
+}
+
+.sliderSec hr {
+    width: 19.5%;
+    margin-bottom: 60px;
+    height: 2px;
+    border: none;
+    background-color: var(--dark-pink);
+}
+
+.slider {
+    width: 100%;
+    border: solid 2px black;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+.sliderElmnt {
+    height: 196px;
+    width: 39%;
+    min-width: 460px;
+    border-radius: 10px;
+    box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
 }
