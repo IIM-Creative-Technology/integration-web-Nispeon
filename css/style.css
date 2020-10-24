@@ -20,12 +20,13 @@ header {
     width: 100%;
     background-image: linear-gradient(to right, #2f2359, #4c3892);
     position: relative;
+    padding-bottom: 106px;
 }
 
 
 
 /* ------------- NAV STYLES -------------*/
-nav {
+header nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -36,29 +37,29 @@ nav {
     margin: 4.4% 0 0 7.7% ;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     list-style-type: none;
 }
 
-nav ul li a {
+header nav ul li a {
     margin-right: 40px;
 }
 
-nav ul li:nth-of-type(1) a {
+header nav ul li:nth-of-type(1) a {
     border-bottom: #ffffff solid 2px;
     padding: 0 10px;
     margin-left: 30px;
 }
 
-nav a {
+header nav a {
     font-size: 18px;
     font-weight: 500;
     text-align: left;
     color: #ffffff;
 } 
 
-nav section {
+header nav section {
     display: flex;
     width: fit-content;
     height: 0;
@@ -111,7 +112,7 @@ nav section {
 }
 
 .groupButton a {
-    font-size: 19.5px;
+    font-size: 20px;
     font-weight: 500;
     text-align: left;
     color: #ffffff;
@@ -148,7 +149,7 @@ nav section {
 
 .bet h2 {
     margin: 65px auto 40px auto;
-    font-size: 40.5px;
+    font-size: 41px;
     font-weight: 700;
     line-height: 0.52;
     text-align: center;
@@ -258,7 +259,7 @@ nav section {
 }
 
 .sliderSec h2 {
-    font-size: 40.5px;
+    font-size: 41px;
     font-weight: bold;
     color: var(--dark-pink);
     margin-bottom: 29px;
@@ -285,7 +286,7 @@ nav section {
     width: 39%;
     min-width: 460px;
     border-radius: 10px;
-    box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+    box-shadow: 0.9px 10px 16px 1px rgba(98, 98, 98, 0.19);
 }
 
 
@@ -301,7 +302,7 @@ nav section {
 }
 
 .custom h2 {
-    font-size: 40.5px;
+    font-size: 41px;
     font-weight: bold;
     color: #ffffff;
 }
@@ -329,7 +330,7 @@ nav section {
 
 .custom h3::after {
     content: "Nouveau !";
-    font-size: 16.5px;
+    font-size: 17px;
     font-weight: 600;
     text-align: left;
     color: var(--dark-blue-grey);
@@ -441,6 +442,8 @@ nav section {
 .reviewText {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding: 4.8% 7.2% 3.3% 8%;
 }
 .reviewText p {
@@ -449,7 +452,7 @@ nav section {
     color: #222222;
 }
 
-.reviewText p::first-letter {
+.reviewText p:not(#comment)::first-letter {
     float: left;
     font-size: 75px;
     line-height: 70px;
@@ -462,8 +465,16 @@ nav section {
 
 .reviewText img {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -36px;
+    right: -12px;
+}
+
+#comment {
+    font-weight: 400;
+    font-size: 14px;
+    color: #bbbbbb;
+    font-style: italic;
+    margin-top: 24px;
 }
 
 
@@ -472,4 +483,75 @@ nav section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/* ------------- FOOTER ------------- */
+
+
+footer {
+    height: 411px;
+    width: 100vW;
+    background-image: url(../img/background-footer.png);
+    background-position: center;
+    background-size: cover;
+    padding: 67px 7.8% 24px 6.9%;
+}
+
+footer a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 2.67;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footerOrder {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav {
+    margin-top: 36px;
+    display: flex;
+}
+
+.footerOrder nav > div {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerOrder nav > div:first-of-type {
+    margin-right: 59px;
+}
+
+.socials {
+    display: flex;
+    align-items: flex-end;
+}
+
+.socials img {
+    margin: 0 3px;
+}
+
+footer hr {
+    width: 85%;
+    height: 3px;
+    opacity: 0.35;
+    background-color: #ffffff;
+    border: none;
+    margin: auto;
+    margin-bottom: 19px;
+}
+
+h5 {
+    font-size: 11px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
 }
