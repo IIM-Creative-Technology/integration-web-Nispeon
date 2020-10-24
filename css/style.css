@@ -17,7 +17,6 @@
 
 
 header {
-    height: 900px;
     width: 100%;
     background-image: linear-gradient(to right, #2f2359, #4c3892);
     position: relative;
@@ -103,7 +102,7 @@ nav section {
 }
 
 .groupButton {
-    margin: 34px 0 0 177px;
+    margin: 34px 0 106px 177px;
     background-color: var(--dark-pink);
     height: fit-content;
     padding: 15px 26px;
@@ -138,7 +137,6 @@ nav section {
 
 
 .bet {
-    height: 962px;
     background-image: url(../img/background.png);
     background-repeat: repeat;
     width: 100%;
@@ -204,9 +202,6 @@ nav section {
 }
 
 .bet4 h3::after {
-    /* content: ".";
-    font-weight: 900;
-    color: var(--dark-pink); */
     content: url(../img/Ellipse\ 2.png);
     margin-left: 16px;
 } 
@@ -226,19 +221,16 @@ nav section {
 
 .joinButton {
     background-color: var(--dark-pink);
-    height: fit-content;
+    height: auto;
     padding: 15px 26px;
     border-radius: 50px;
     width: fit-content;
+    margin-bottom: 105px;
 }
 
 .joinButton a {
     font-size: 19px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
 }
@@ -304,7 +296,6 @@ nav section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 823px;
     padding: 74px 185px;
     background-image: linear-gradient(to top, var(--dark-blue-grey), var(--blueberry));
 }
@@ -355,6 +346,7 @@ nav section {
     line-height: 1.56;
     text-align: left;
     color: #ffffff;
+    width: 82%;
 }
 
 .custom p span {
@@ -406,10 +398,78 @@ nav section {
 .left, #middle, .right {
     z-index: 15;
 }
+
+#middle, .right {
+    margin-top: 35px;
+}
 .custom img {
     z-index: 10;
     position: absolute;
     left: 50%;
     top: -8px;
     transform: translate(-50%, 0);
+}
+
+.customButton {
+    background-color: var(--dark-pink);
+    height: fit-content;
+    padding: 15px 26px;
+    border-radius: 50px;
+    width: fit-content;
+    margin-top: 149px;
+}
+
+.customButton a {
+    font-size: 19px;
+    font-weight: 500;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+/* -------------- CUSTOMER REVIEW SECTION---------------- */
+
+.review {
+    height: 720px;
+    display: flex;
+}
+
+.review > div {
+    width: 50%;
+}
+
+.reviewText {
+    display: flex;
+    align-items: center;
+    padding: 4.8% 7.2% 3.3% 8%;
+}
+.reviewText p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.reviewText p::first-letter {
+    float: left;
+    font-size: 75px;
+    line-height: 70px;
+    padding-right: 6px;
+}
+
+.reviewText span {
+    position: relative;
+}
+
+.reviewText img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.reviewImg {
+    background-image: url(../img/joueurs.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
