@@ -11,6 +11,8 @@
 :root {
     --dark-pink: #bf3676;
     --lavender: #d3c4f2;
+    --dark-blue-grey: #2f2359;
+    --blueberry: #4c3991;
 }
 
 
@@ -260,8 +262,7 @@ nav section {
 
 .sliderSec {
     background-color: #ffffff;
-    height: 602px;
-    padding: 10.1% 8.8%;
+    padding: 61px 8.8%;
 }
 
 .sliderSec h2 {
@@ -293,4 +294,73 @@ nav section {
     min-width: 460px;
     border-radius: 10px;
     box-shadow: 0.9px 10px 15.5px 0.5px rgba(98, 98, 98, 0.19);
+}
+
+
+
+/* ----------PART ABOUT CUSTOMIZATION --------------*/
+
+.custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 823px;
+    padding: 74px 185px;
+    background-image: linear-gradient(to top, var(--dark-blue-grey), var(--blueberry));
+}
+
+.custom h2 {
+    font-size: 40.5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.custom hr {
+    width: 17.2%;
+    margin-top: 29px;
+    margin-bottom: 111px;
+    height: 2px;
+    border: none;
+    background-color: #ffffff;
+}
+
+.customOrder {
+    display: flex;
+}
+
+.custom h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 32px;
+}
+
+.custom h3::after {
+    content: "Nouveau !";
+    font-size: 16.5px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--dark-blue-grey);
+    padding: 3px 21px;
+    background: #ffffff;
+    border: none;
+    border-radius: 22px;
+    margin-left: 56px;
+}
+
+.custom p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    text-align: left;
+    color: #ffffff;
+}
+
+.custom p span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.customOrder div {
+    width: 50%;
 }
