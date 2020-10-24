@@ -326,6 +326,7 @@ nav section {
 
 .customOrder {
     display: flex;
+    position: relative;
 }
 
 .custom h3 {
@@ -361,6 +362,54 @@ nav section {
     font-weight: 300;
 }
 
-.customOrder div {
-    width: 50%;
+.left {
+    width: 59%;
+}
+
+.right {
+    width: 49%;
+}
+
+#middle {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#middle ol li {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0.83;
+    color: var(--dark-blue-grey);
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 60px;
+    margin: 11px;
+    text-align: center;
+}
+
+.customOrder ol {
+    list-style-type: none;
+    counter-reset: li;
+}
+
+.right ol li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    color: #ffffff;
+    margin: 16px 0;
+    counter-increment: li;
+}
+
+.left, #middle, .right {
+    z-index: 15;
+}
+.custom img {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: -8px;
+    transform: translate(-50%, 0);
 }
