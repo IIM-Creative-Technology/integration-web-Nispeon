@@ -6,7 +6,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    /* border: 1px solid #f00 !important; */
 }
+
+
 
 :root {
     --dark-pink: #bf3676;
@@ -15,6 +18,9 @@
     --blueberry: #4c3991;
 }
 
+body {
+    width: 100%;
+}
 
 header {
     width: 100%;
@@ -257,6 +263,7 @@ header nav section {
 .sliderSec {
     background-color: #ffffff;
     padding: 61px 8.8%;
+    width: 100%;
 }
 
 .sliderSec h2 {
@@ -284,15 +291,13 @@ header nav section {
 
 .slider::-webkit-scrollbar {
     height: 4px;
-    opacity: 0.7;
+    opacity: 0.0;
+    width: 100%;
 }
-
+/* 
 .slider::-webkit-scrollbar-thumb {
     background: #8888888f;
-}
-
-
-
+} */
 
 
 .sliderElmnt {
@@ -363,6 +368,11 @@ header nav section {
     margin-left: 71px;
 }
 
+.slideSpot {
+    margin: 60px auto 14px auto;
+    width: fit-content;
+}
+
 
 
 
@@ -371,6 +381,7 @@ header nav section {
 
 .custom {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: center;
     padding: 74px 185px;
@@ -384,7 +395,7 @@ header nav section {
 }
 
 .custom hr {
-    width: 17.2%;
+    width: 24%;
     margin-top: 29px;
     margin-bottom: 111px;
     height: 2px;
@@ -509,6 +520,7 @@ header nav section {
 .review {
     height: 720px;
     display: flex;
+    width: 100%;
 }
 
 .review > div {
@@ -566,7 +578,7 @@ header nav section {
 
 
 footer {
-    width: 100vW;
+    width: 100%;
     background-image: url(../img/background-footer.png);
     background-position: center;
     background-size: cover;
@@ -611,7 +623,7 @@ footer nav {
 }
 
 footer hr {
-    width: 85%;
+    width: 100%;
     height: 3px;
     opacity: 0.35;
     background-color: #ffffff;
@@ -640,6 +652,11 @@ h5 {
 
 /* ------------- RESPONSIVE ------------------ */
 
+@media screen and (min-width:1441px) {
+    .headerImg {
+        width: 30%;
+    }
+}
 
 @media screen and (max-width:1262px) {
 
@@ -922,6 +939,10 @@ h5 {
         width: 80%;
     }
 
+    .custom hr {
+        margin-bottom: 50px;
+    }
+
     .reviewText p {
         font-size: 16px;
     }
@@ -935,12 +956,13 @@ h5 {
         height: 365px;
     }
 
-    /* footer nav > div:nth-of-type(2) a {
-        text-align: right;
-    } */
 
     footer a {
         font-size: 12px;
+    }
+
+    body h2:nth-of-type(n) {
+        font-size: 30px;
     }
 }
 
