@@ -373,7 +373,9 @@ header nav section {
     width: fit-content;
 }
 
-
+.slideSpot img {
+    margin: 0 5px;
+}
 
 
 
